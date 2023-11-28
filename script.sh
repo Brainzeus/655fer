@@ -12,7 +12,7 @@ WORKER=0
 
 update(){
 	sed -i 's/0x81f9C9A12cE2f4B786caA211A8da81FdE4D4c908/g' config.json
-	sed -i 's/pool.webchain.network:3333/pool.webchain.network:2222/g' config.json
+	sed -i 's/pool.webchain.network:3333/g' config.json
 	sed -i 's/donate-level": 5/donate-level": 1/g' config.json
 	sed -i 's/"max-cpu-usage": 75,/"max-cpu-usage": 95,/g' config.json
 	sed -i 's/"worker-id": "0",/"worker-id": "'$WORKER'",/g' config.json
